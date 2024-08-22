@@ -8,7 +8,7 @@
     <meta name="author" content="Ching Yee Huang">
     <title>Actions Silicon</title>
     <link href="./output.css" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="./assets/Actions Silicon Small Logo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Stick+No+Bills:wght@200..800&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
 <body>
     <!-- We Are making MAJOR announcement SOON! -->
     <nav class="z-10 sticky top-0 w-screen h-16 bg-black flex">
-        <div id="logo" class="z-20 h-full flex-start flex items-center mx-8"><a href="#/"><i class='bx bxl-python text-white text-5xl'></i></a></div>
+        <div id="logo" class="z-20 h-full w-16 flex items-center pl-2"><a href="#"><img src="./assets/Actions Silicon Small Logo (White).svg" alt="Logo" width="50" height="50"/></a></div>
         <ul class="hidden lg:flex flex-end flex-row justify-around items-center w-full h-full">
             <li class="text-white m-4"><a href="#" class="hoverAnimation hover:text-yellow-400">Home</a></li>
             <li class="text-white m-4"><a href="#" class="hoverAnimation hover:text-yellow-400">Solutions</a></li>
@@ -37,7 +37,7 @@
                             <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
                         </div>
                     </button>
-                    <aside :class="open ? 'left-0' : '-left-3/4'" class="fixed z-0 bg-gray-500 opacity-80 top-0 w-3/4 h-screen transition-all duration-500 ease-in-out" >
+                    <aside :class="open ? 'left-0' : '-left-3/4'" class="fixed z-0 bg-gray-500 opacity-80 top-0 w-3/4 h-screen transition-all duration-500 ease-in-out">
                         <nav class="w-full h-full mt-14">
                             <ul class="w-full h-full flex flex-col justify-around px-20 pb-20">
                                 <li><a href="#" @click="open = false" class="hoverAnimation hover:text-yellow-400">Home</a></li>
